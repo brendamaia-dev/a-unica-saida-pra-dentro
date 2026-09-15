@@ -5,7 +5,7 @@
 // const CHECKOUT_URL = "https://pay.kiwify.com.br/pN0pc7H";
 // ======================================================
 
-const CHECKOUT_URL = "";
+const CHECKOUT_URL = "https://pay.kiwify.com.br/pN0pc7H";
 
 document.querySelectorAll(".checkout-button").forEach((button) => {
   button.addEventListener("click", () => {
@@ -37,7 +37,7 @@ if ("IntersectionObserver" in window) {
         }
       });
     },
-    { threshold: 0.12 }
+    { threshold: 0.12 },
   );
 
   revealElements.forEach((element) => observer.observe(element));
